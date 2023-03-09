@@ -31,7 +31,7 @@ gem "factory_bot_rails"
 #  Authentication & Authorization
 ##############################
 # Flexible authentication solution for Rails with Warden (https://github.com/heartcombo/devise)
-gem "devise", "~> 4.8"
+gem "devise", "~> 4.8", ">= 4.8.1"
 
 ##############################
 ### Frontend
@@ -55,9 +55,9 @@ gem "lookbook"
 # A comprehensive slugging and pretty-URL plugin. (https://github.com/norman/friendly_id)
 gem "friendly_id", "~> 5.4"
 # Use Vite in Rails and bring joy to your JavaScript experience (https://github.com/ElMassimo/vite_ruby)
-gem "vite_rails", "~> 3.0"
+gem "vite_rails", "~> 3.0", ">= 3.0.12"
 # Use Vite in Ruby and bring joy to your JavaScript experience (https://github.com/ElMassimo/vite_ruby)
-gem "vite_ruby", "~> 3.2"
+gem "vite_ruby", "~> 3.2", ">= 3.2.10"
 
 ##############################
 # In Memory
