@@ -53,7 +53,7 @@ gem "view_component"
 gem "lookbook"
 # gem "jbuilder"
 # A comprehensive slugging and pretty-URL plugin. (https://github.com/norman/friendly_id)
-gem "friendly_id", "~> 5.4"
+gem "friendly_id", "~> 5.4", ">= 5.4.2"
 # Use Vite in Rails and bring joy to your JavaScript experience (https://github.com/ElMassimo/vite_ruby)
 gem "vite_rails", "~> 3.0", ">= 3.0.12"
 # Use Vite in Ruby and bring joy to your JavaScript experience (https://github.com/ElMassimo/vite_ruby)
@@ -144,7 +144,7 @@ group :test do
   # Making tests easy on the fingers and eyes (http://thoughtbot.com/community/)
   # Simple one-liner tests for common Rails functionality (https://matchers.shoulda.io/)
   # Making tests easy on the fingers and eyes (http://thoughtbot.com/community/)
-  gem "shoulda-matchers", "~> 3.1"
+  gem "shoulda-matchers", "~> 3.1", ">= 3.1.3"
   # Ruby JSON Schema Validator (http://github.com/voxpupuli/json-schema/)
   gem "json-schema"
   # Extracting `assigns` and `assert_template` from ActionDispatch. (https://github.com/rails/rails-controller-testing)
