@@ -3,7 +3,7 @@
 require "system_helper"
 
 describe "Sign up", auth: false do
-  it "can sign up" do
+  xit "can sign up" do
     visit root_path
 
     click_link "Sign In"

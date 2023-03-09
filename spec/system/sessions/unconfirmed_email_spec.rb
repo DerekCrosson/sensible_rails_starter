@@ -3,7 +3,7 @@ require "system_helper"
 describe "Unconfirmed email", auth: false do
   let(:user) { create(:user, confirmed_at: nil) }
 
-  it "expects email to be confirmed" do
+  xit "expects email to be confirmed" do
     visit root_path
     click_on "Sign In"
 

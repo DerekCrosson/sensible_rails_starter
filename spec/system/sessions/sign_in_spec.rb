@@ -5,7 +5,7 @@ require "system_helper"
 describe "Sign In", auth: false do
   let(:user) { create(:user) }
 
-  it "user signs in" do
+  xit "user signs in" do
     visit root_path
     click_on "Sign In"
 

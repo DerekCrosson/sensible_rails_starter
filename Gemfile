@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.1.2"
+ruby File.read(".ruby-version").strip
 
 ##############################
 ### Core
@@ -11,7 +11,7 @@ ruby "3.1.2"
 # Use Rails edge vesion
 # Full-stack web application framework. (https://rubyonrails.org)
 # gem "rails", git: "https://github.com/rails/rails.git"
-gem "rails", "7.0.3.1"
+gem "rails", "7.0.4.1"
 # Puma is a simple, fast, threaded, and highly parallel HTTP 1.1 server for Ruby/Rack applications (https://puma.io)
 gem "puma"
 
