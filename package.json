@@ -11,7 +11,7 @@
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.7",
     "autoprefixer": "^10.4.10",
-    "postcss": "^8.4.16",
+    "postcss": "^8.4.19",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.1.0",
     "postcss-nesting": "^10.1.7",
