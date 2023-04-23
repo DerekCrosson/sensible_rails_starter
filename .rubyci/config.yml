@@ -1,8 +1,0 @@
-# .rubyci/config.yml
-
-version: 1
-
-build_packs:
-  node_js:
-    # Available versions: [12..17]
-    version: 16.0.0

@@ -490,12 +490,12 @@ DEPENDENCIES
   cuprite
   database_cleaner
   debug
-  devise (~> 4.8, >= 4.8.1)
+  devise (~> 4.8, >= 4.9.0)
   email_spec
   erb_lint
   factory_bot_rails
   faker
-  friendly_id (~> 5.4, >= 5.4.2)
+  friendly_id (~> 5.4, >= 5.5.0)
   fuubar
   json-schema
   kredis
