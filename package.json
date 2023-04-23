@@ -14,7 +14,7 @@
     "postcss": "^8.4.19",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.1.0",
-    "postcss-nesting": "^10.1.7",
+    "postcss-nesting": "^11.2.2",
     "postcss-preset-env": "^7.7.0",
     "sass": "^1.58.3",
     "stimulus-animated-number": "^4.0.0",
