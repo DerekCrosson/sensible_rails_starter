@@ -63,7 +63,7 @@ gem "vite_ruby", "~> 3.2", ">= 3.2.10"
 # In Memory
 ##############################
 # A Ruby client library for Redis (https://github.com/redis/redis-rb)
-gem "redis", "~> 4.0"
+gem "redis", "~> 5.0"
 # Higher-level data structures built on Redis. (https://github.com/rails/kredis)
 gem "kredis"
 
