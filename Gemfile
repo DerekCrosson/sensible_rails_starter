@@ -144,7 +144,7 @@ group :test do
   # Making tests easy on the fingers and eyes (http://thoughtbot.com/community/)
   # Simple one-liner tests for common Rails functionality (https://matchers.shoulda.io/)
   # Making tests easy on the fingers and eyes (http://thoughtbot.com/community/)
-  gem "shoulda-matchers", "~> 3.1", ">= 3.1.3"
+  gem "shoulda-matchers", "~> 5.3"
   # Ruby JSON Schema Validator (http://github.com/voxpupuli/json-schema/)
   gem "json-schema"
   # Extracting `assigns` and `assert_template` from ActionDispatch. (https://github.com/rails/rails-controller-testing)
