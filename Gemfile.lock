@@ -214,7 +214,7 @@ GEM
     irb (1.6.4)
       reline (>= 0.3.0)
     json (2.6.3)
-    json-schema (3.0.0)
+    json-schema (4.0.0)
       addressable (>= 2.8)
     kredis (1.3.0.1)
       activesupport (>= 6.0.0)
