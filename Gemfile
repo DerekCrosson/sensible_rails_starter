@@ -19,7 +19,7 @@ gem "puma"
 ### Data
 #############################
 # Pg is the Ruby interface to the PostgreSQL RDBMS (https://github.com/ged/ruby-pg)
-gem "pg", "~> 1.1"
+gem "pg", "~> 1.5"
 # Catch unsafe migrations in development (https://github.com/ankane/strong_migrations)
 gem "strong_migrations"
 # Easily generate fake data (https://github.com/faker-ruby/faker)
