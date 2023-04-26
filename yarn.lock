@@ -3186,10 +3186,10 @@ stimulus-animated-number@^4.1.0:
   resolved "https://registry.yarnpkg.com/stimulus-animated-number/-/stimulus-animated-number-4.1.0.tgz#2966c541c265ba483e69c64c0faf2702fada8f61"
   integrity sha512-lq0o4nrD6EgY2bXxMKQ6WgdGKZpOdyAILsdIUEfFklCI8VenpxrP/PxOiXfS5vl+8KoJNtFweVv2o4TTpFG21A==
 
-stimulus-character-counter@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/stimulus-character-counter/-/stimulus-character-counter-4.1.0.tgz#2195c9b8aa3708c2d820b2716fa6e4aa5c2959e0"
-  integrity sha512-SkPysFS4g9y0NEVs2zl5nPpBD6hDwP0h3bxEdMeVFgoUP+44kEf1qQr+RGruzqrS6HkHnNjmdF8Y8a46KcyS+Q==
+stimulus-character-counter@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/stimulus-character-counter/-/stimulus-character-counter-4.2.0.tgz#6e7782c2c525ccc661ffbb39a7b15085a3a42a21"
+  integrity sha512-5ZN5wFlOnIkZRSiwtC7zb880yvE4O/4+KOhdg0z6zQet4iLA2+W0NJvHX5teW6tl5M1IGzHrgOtuEsUVfQ2TrA==
 
 stimulus-vite-helpers@^3.0.0, stimulus-vite-helpers@^3.0.1:
   version "3.0.1"
