@@ -60,3 +60,4 @@ yarn-error.log
 /config/credentials/production.key
 
 /config/credentials/test.key
+/codealike.json

@@ -6,14 +6,16 @@
 <br>
 
 ### Vision
+
 To make the adoption of Ruby on Rails easier for use in projects.
 
 ### Philosophy
+
 Keep with the _**[Boring Rails](https://boringrails.com/)**_ practice and way of doing things.
 
 With some added nuances for developer happiness.
 
-And Reactiveness... we'll let Russ explain. 
+And Reactiveness... we'll let Russ explain.
 
 [<img src="https://img.youtube.com/vi/utxCm3uLhIE/maxresdefault.jpg" width="50%">](https://youtu.be/utxCm3uLhIE)
 
@@ -35,24 +37,19 @@ And Reactiveness... we'll let Russ explain.
 
 ## What's in the box
 
-
 - **SimpleTails** a [TailwindCSS prose](https://tailwindcss.com/docs/typography-plugin) implementation heavily inspired by [SimpleCSS](https://simplecss.org/).
-
 - [ViteRuby](https://vite-ruby.netlify.app/) for lightning fast server starts, instant page update in development thanks to HMR nd much more
-
 - [Anyway Config](https://github.com/palkan/anyway_config) to keep your Ruby configuration sane
-
 - [ViewComponents](https://viewcomponent.org/) - A framework for creating reusable, testable & encapsulated view components, built to integrate seamlessly with Ruby on Rails.
-
 - [LookBook](https://github.com/ViewComponent/lookbook) - A tool to help browse, develop, test & document ViewComponents in Ruby on Rails apps
-
 - [Tailwind Config Viewer](https://github.com/rogden/tailwind-config-viewer) - A local UI tool for visualizing your Tailwind CSS configuration file.
-
 - [Avo](https://avohq.io/) - Avo uses familiar configuration to build up the features you need from most applications.
-  The result is a full-featured customer-facing app that works out of the box, ready to be used to your end-users. 
-  > **NB:** Avo will likely be removed for an OSS option or self rolled solution 
+  The result is a full-featured customer-facing app that works out of the box, ready to be used to your end-users.
 
+  > **NB:** Avo will likely be removed for an OSS option or self rolled solution
+  >
 - [overcommit](https://github.com/sds/overcommit) is a tool to manage and configure [Git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks).
+
 ---
 
 ## Getting Started
@@ -85,10 +82,12 @@ gem install dip
 ```
 
 Provision the containers & start the application
+
 ```bash
 dip provision && dip up web
 ```
- ---
+
+---
 
 ## Configuration
 
@@ -96,7 +95,7 @@ You can chnange the app name in `config/sensibles.yml`
 
 [<img src="docs/images/sensibles-config.png" width="80%">](docs/images/sensibles-config.png)
 
- ---
+---
 
 ## Using overcommit
 
@@ -121,27 +120,26 @@ You should see the following
 
 The above pre commit hooks have been defined in [.overcommit.yml](.overcommit.yml)
 
-
 > **Troubleshooting Overcommit**
-    <details>
-      <summary>click for more</summary>
-> 
->  If you get errors try running the following anf then the above steps.
->     
->     overcommit --uninstall
-
----
-
-## Alternatives
-
-[See a list of alternative Rails 7 templates here](docs/sensibles/alternatives.md)
-
----
-
-## Contributions
-
-Contributions welcome 🤗
-
-> Contributions aligning with the project vision are welcome.
-
----
+>
+> <details>
+> <summary>click for more</summary>
+>
+> If you get errors try running the following anf then the above steps.
+>
+> overcommit --uninstall
+>
+> ---
+>
+> ## Alternatives
+>
+> [See a list of alternative Rails 7 templates here](docs/sensibles/alternatives.md)
+>
+> ---
+>
+> ## Contributions
+>
+> Contributions welcome 🤗
+>
+>> Contributions aligning with the project vision are welcome.
+>>
