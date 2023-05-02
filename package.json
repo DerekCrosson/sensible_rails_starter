@@ -40,7 +40,7 @@
     "standard": "^17.0.0",
     "tailwind-config-viewer": "^1.7.1",
     "vite-plugin-full-reload": "^1.0.4",
-    "vite-plugin-ruby": "^3.2.0",
+    "vite-plugin-ruby": "^3.2.2",
     "vite-plugin-stimulus-hmr": "^3.0.0"
   }
 }
