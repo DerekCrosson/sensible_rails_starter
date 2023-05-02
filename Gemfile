@@ -57,7 +57,7 @@ gem "friendly_id", "~> 5.4", ">= 5.5.0"
 # Use Vite in Rails and bring joy to your JavaScript experience (https://github.com/ElMassimo/vite_ruby)
 gem "vite_rails", "~> 3.0", ">= 3.0.12"
 # Use Vite in Ruby and bring joy to your JavaScript experience (https://github.com/ElMassimo/vite_ruby)
-gem "vite_ruby", "~> 3.2", ">= 3.2.10"
+gem "vite_ruby", "~> 3.3"
 
 ##############################
 # In Memory
