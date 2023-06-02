@@ -5,7 +5,15 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    versioning-strategy: "lockfile-only"
+    labels:
+      - "dependencies"
+      - "automerge-minor"
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
+    versioning-strategy: "lockfile-only"
+    labels:
+      - "dependencies"
+      - "automerge-minor"
