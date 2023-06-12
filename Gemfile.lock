@@ -73,7 +73,7 @@ GEM
       rake (>= 10.4, < 14.0)
     annotate_gem (0.0.14)
       bundler (>= 1.1)
-    anyway_config (2.4.1)
+    anyway_config (2.4.2)
       ruby-next-core (>= 0.14.0)
     appsignal (3.4.2)
       rack
