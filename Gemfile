@@ -11,7 +11,7 @@ ruby File.read(".ruby-version").strip
 # Use Rails edge vesion
 # Full-stack web application framework. (https://rubyonrails.org)
 # gem "rails", git: "https://github.com/rails/rails.git"
-gem "rails", "7.0.5"
+gem "rails", "7.0.5.1"
 # Puma is a simple, fast, threaded, and highly parallel HTTP 1.1 server for Ruby/Rack applications (https://puma.io)
 gem "puma"
 
