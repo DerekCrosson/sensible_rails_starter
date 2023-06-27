@@ -171,7 +171,7 @@ GEM
     diff-lcs (1.5.0)
     docile (1.4.0)
     dry-cli (1.0.0)
-    email_spec (2.2.1)
+    email_spec (2.2.2)
       htmlentities (~> 4.3.3)
       launchy (~> 2.1)
       mail (~> 2.7)
