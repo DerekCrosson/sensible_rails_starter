@@ -1,0 +1,11 @@
+{
+  "name": "Sensible Rails Starter",
+  "image": "ruby:3.0.2-buster",
+  "command": "sleep infinity",
+  "postCreateCommand": "bundle install && yarn install && bin/dev",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ],
+  "overrideCommand": false,
+  "workspaceFolder": "/workspace"
+}
