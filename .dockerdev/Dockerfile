@@ -59,7 +59,7 @@ ENV LANG=C.UTF-8 \
   BUNDLE_JOBS=4 \
   BUNDLE_RETRY=3
 
-# Store Bundler settings in the project's root
+# Store Bundler settings in the project's root  directory
 ENV BUNDLE_APP_CONFIG=.bundle
 
 # Uncomment this line if you want to run binstubs without prefixing with `bin/` or `bundle exec`

@@ -21,6 +21,11 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   url: <%= ENV["DATABASE_URL"] %>
+  host: 127.0.0.1
+  database: postgres
+  username: postgres
+  password: password
+  port: 6000
 
 development:
   <<: *default

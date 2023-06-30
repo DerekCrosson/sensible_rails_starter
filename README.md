@@ -107,18 +107,19 @@ The above pre commit hooks have been defined in [.overcommit.yml](.overcommit.ym
 > If you get errors try running the following anf then the above steps.
 >
 > overcommit --uninstall
->
-> ---
->
-> ## Alternatives
->
-> [See a list of alternative Rails 7 templates here](docs/sensibles/alternatives.md)
->
-> ---
->
-> ## Contributions
->
-> Contributions welcome 🤗
->
->> Contributions aligning with the project vision are welcome.
->>
+
+---
+
+ ## Alternatives
+
+ [See a list of alternative Rails 7 templates here](docs/sensibles/alternatives.md)
+
+
+ ---
+
+## Contributions
+
+ Contributions welcome 🤗
+
+ Contributions aligning with the project vision are welcome.
+
