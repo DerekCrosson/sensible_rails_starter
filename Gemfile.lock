@@ -75,7 +75,7 @@ GEM
       bundler (>= 1.1)
     anyway_config (2.4.2)
       ruby-next-core (>= 0.14.0)
-    appsignal (3.4.5)
+    appsignal (3.4.6)
       rack
     ast (2.4.2)
     awesome_print (1.9.2)
