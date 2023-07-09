@@ -421,7 +421,7 @@ GEM
       standard
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
-    strong_migrations (1.4.4)
+    strong_migrations (1.5.0)
       activerecord (>= 5.2)
     sys-uname (1.2.3)
       ffi (~> 1.1)
