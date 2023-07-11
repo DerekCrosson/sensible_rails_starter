@@ -204,3 +204,5 @@ group :development do
   # YAML lint checker
   gem "yamllint"
 end
+
+gem "audited", "~> 5.3"

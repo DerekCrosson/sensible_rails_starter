@@ -15,6 +15,7 @@ module Rails
       pass = IO::console.getpass
 
       if user.valid_password?(pass.strip)
+        Audited.store[:audited_user] = user
         puts "\nWelcome, #{user.email}!"
       else
         puts 'Password is incorrect! Exiting...'

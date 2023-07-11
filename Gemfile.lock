@@ -78,6 +78,9 @@ GEM
     appsignal (3.4.6)
       rack
     ast (2.4.2)
+    audited (5.3.3)
+      activerecord (>= 5.0, < 7.1)
+      request_store (~> 1.2)
     awesome_print (1.9.2)
     bcrypt (3.1.19)
     better_html (2.0.2)
@@ -348,6 +351,8 @@ GEM
     regexp_parser (2.8.1)
     reline (0.3.6)
       io-console (~> 0.5)
+    request_store (1.5.1)
+      rack (>= 1.4)
     require_all (3.0.0)
     responders (3.1.0)
       actionpack (>= 5.2)
@@ -481,6 +486,7 @@ DEPENDENCIES
   annotate_gem
   anyway_config
   appsignal
+  audited (~> 5.3)
   awesome_print (~> 1.9)
   bootsnap
   brakeman
@@ -534,7 +540,7 @@ DEPENDENCIES
   yamllint
 
 RUBY VERSION
-   ruby 2.7.8p225
+   ruby 3.2.2p53
 
 BUNDLED WITH
    2.4.12

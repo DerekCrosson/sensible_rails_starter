@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_01_170325) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_11_153957) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
   enable_extension "plpgsql"
@@ -43,6 +43,75 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_01_170325) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "beneficiaries", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.uuid "project_id", null: false
+    t.string "name"
+    t.string "race"
+    t.string "gender"
+    t.integer "age"
+    t.string "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_beneficiaries_on_project_id"
+  end
+
+  create_table "members", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.uuid "user_id", null: false
+    t.uuid "tenant_id", null: false
+    t.jsonb "roles", default: {}, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["tenant_id"], name: "index_members_on_tenant_id"
+    t.index ["user_id"], name: "index_members_on_user_id"
+  end
+
+  create_table "milestones", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.uuid "project_id", null: false
+    t.string "name"
+    t.text "description"
+    t.date "milestone_date"
+    t.string "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_milestones_on_project_id"
+  end
+
+  create_table "organisations", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+    t.string "contact_number"
+    t.string "project_manager_name"
+    t.string "organisation_type"
+    t.integer "total_projects_funded"
+    t.decimal "total_funds_approved"
+    t.decimal "funds_disbursed_to_date"
+    t.boolean "is_active"
+    t.uuid "tenant_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["tenant_id"], name: "index_organisations_on_tenant_id"
+  end
+
+  create_table "projects", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.uuid "organisation_id", null: false
+    t.string "name"
+    t.string "area"
+    t.date "start_date"
+    t.date "end_date"
+    t.string "disbursement_type"
+    t.integer "no_of_disbursement_tranches"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "project_phase"
+    t.index ["organisation_id"], name: "index_projects_on_organisation_id"
+  end
+
+  create_table "tenants", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -64,12 +133,31 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_01_170325) do
     t.datetime "locked_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "invitation_token"
+    t.datetime "invitation_created_at"
+    t.datetime "invitation_sent_at"
+    t.datetime "invitation_accepted_at"
+    t.integer "invitation_limit"
+    t.string "invited_by_type"
+    t.bigint "invited_by_id"
+    t.integer "invitations_count", default: 0
+    t.string "firstname"
+    t.string "lastname"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["invitation_token"], name: "index_users_on_invitation_token", unique: true
+    t.index ["invited_by_id"], name: "index_users_on_invited_by_id"
+    t.index ["invited_by_type", "invited_by_id"], name: "index_users_on_invited_by"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "beneficiaries", "projects"
+  add_foreign_key "members", "tenants"
+  add_foreign_key "members", "users"
+  add_foreign_key "milestones", "projects"
+  add_foreign_key "organisations", "tenants"
+  add_foreign_key "projects", "organisations"
 end
