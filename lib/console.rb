@@ -2,7 +2,6 @@
 # [Making Your Rails Console Interesting..](https://dev.to/thespectator/making-your-rails-console-interesting-pdc)
 # [Customizing the Rails Console](https://josh.fail/2015/customizing-the-rails-console/)
 # TODO: Consider this -> [How to add custom methods to Rails console](https://www.kostolansky.sk/posts/rails-console-methods/)
-# TODO: add this -> [How to Secure and Audit a Rails Console](https://medium.com/swlh/how-to-secure-and-audit-a-rails-console-b25050170caa)
 
 require "irb/completion"
 require "rainbow"
