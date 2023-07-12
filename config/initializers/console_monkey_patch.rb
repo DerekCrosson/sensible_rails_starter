@@ -1,24 +1,26 @@
 module Rails
   module ConsoleMethods
     def self.included(_base)
-      print 'Enter your Admin email: '
+      print "Enter your Admin email: "
+      user = User.find_by(email: $stdin.gets.chomp.strip)
+      handle_non_admin_user(user)
+      print "Enter your password: "
+      handle_auth(user, IO.console.getpass)
+    end
 
-      email = STDIN.gets.chomp
-      user = User.find_by(email: email.strip)
-
+    def handle_non_admin_user(user)
       unless user.admin?
-        puts 'Admin not found! Exiting...'
+        puts "Admin not found! Exiting..."
         exit
       end
+    end
 
-      print 'Enter your password: '
-      pass = IO::console.getpass
-
+    def handle_auth(user, pass)
       if user.valid_password?(pass.strip)
         Audited.store[:audited_user] = user
         puts "\nWelcome, #{user.email}!"
       else
-        puts 'Password is incorrect! Exiting...'
+        puts "Password is incorrect! Exiting..."
         exit
       end
     end

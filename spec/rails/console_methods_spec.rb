@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe Rails::ConsoleMethods do
   describe ".included" do
@@ -6,8 +6,8 @@ RSpec.describe Rails::ConsoleMethods do
 
     before do
       allow(User).to receive(:find_by).and_return(user)
-      allow(STDIN).to receive(:gets).and_return("#{user.email}\n")
-      allow(IO::console).to receive(:getpass).and_return("password\n")
+      allow($stdin).to receive(:gets).and_return("#{user.email}\n")
+      allow(IO.console).to receive(:getpass).and_return("password\n")
     end
 
     it "logs in an admin user with correct email and password" do
